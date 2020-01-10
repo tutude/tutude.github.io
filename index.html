@@ -4,32 +4,69 @@
 		<title>随便点官网</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css" />
 		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<style>
-			body{
-				background-image: url(img/tutu.jpg);
-				background-size: 100%;
-				background-repeat: no-repeat;
-			}
-			#suibian{
-				font-size: 80px;
-				color: rgba(255,255,255,0.75);
-			}
-		</style>
+		
 		<script>
 			$(
-				() => {
-					$(".container").css("height", window.innerHeight + "px");
+				()=>{
+					$('.jumbotron').css('height',window.innerHeight+'px');
 				}
 			);
 		</script>
+		<style>
+			#pp{
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.18);
+			}
+			.jumbotron{
+				background-color: #FFFFFF;
+				background-image: url(img/bgtop.png);
+				background-size: 100%;
+				background-position: top;
+				background-repeat: no-repeat;
+				height: 100%;
+				font-family: "microsoft yahei";
+			}
+			body{
+				margin-bottom:0px ;
+			}
+			h1{
+				font-weight: 100;
+				font-family: "microsoft yahei";
+				color: #23272B;
+			}
+			.jingzi{
+				background-image: url(img/bgbottom.png);
+				background-repeat: no-repeat;
+				background-position: bottom;
+				background-size: 100% 80%;
+			}
+			.xuke{
+				color: rgba(0,0,0,0.5);
+			}
+		</style>
 	</head>
 	<body>
-		<div class="container d-flex justify-content-center align-items-center">
-			<div id="suibian">Welcome to suibiandian.vip</div>
+		<div class="jumbotron well m-0 d-flex justify-content-center align-items-center">
+			<div class="container">
+				<div class="row clearfix jingzi">
+					<div id="pp" class="col-md-12 column p-5">
+						<h1>
+							随便点 !
+						</h1>
+						<br />
+						<p>
+							欢迎来到随便点官网，如果你也和我一样每天不知道吃什么，快前往我们的首页吧----
+						</p>
+						<p>
+							 <a class="btn btn-link btn-large" href="#">前往首页</a>
+						</p>
+						<p class="fixed-bottom text-center xuke">京ICP证030609号 增值电信业务经营许可证 B2-20060060 广播电视节目制作经营许可证（京）字第803号网络文化经营许可证京网文【2019】5820-670号</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
